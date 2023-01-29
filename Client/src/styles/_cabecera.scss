@@ -1,10 +1,16 @@
 @mixin cabecera($tema) {
     .cabecera{
+        justify-content: center;
+        text-align: center;
         background: map.get($tema,"colorPrimario");
         color: map.get($tema,"colorLetraBlanco");
         img {
             width: 4%;
             animation: giro 5s linear infinite;
+            margin: 1%;
+        }
+        h2 {
+            margin-right: 6%;
         }
     }
 
@@ -18,14 +24,29 @@
       }
 
     .navbar {
-        img {
-            margin: 1%;
+        background: map.get($tema,"colorPrimario");
+        color: map.get($tema,"colorLetraBlanco");
+        div:nth-child(1){
+           display: flex;
+           align-items: center;
+           margin-left: 2rem;
+            img {
+                margin: 1%;
+                width: 4%;
+                animation: giro 5s linear infinite;
+                float: left;
+            }
+            h2 {
+                margin-left: 1rem;
+            }
         }
-        h2 {
-            margin-right: 6%;
+        div:nth-child(2){
+            justify-content: center;
+            text-align: center;
+            a{
+                color: map.get($tema,"colorLetraBlanco");
+            }
         }
-        justify-content: center;
-        text-align: center;
     }
     .btn-volver{
         .volver{

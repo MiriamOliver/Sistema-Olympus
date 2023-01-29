@@ -8,6 +8,14 @@ const filesHTML = [
         chunks: ['index']
     },
     {
+        filename: './html/login.html',
+        chunks: ['login']
+    },
+    {
+        filename: './html/sobrenosotros.html',
+        chunks: ['nosotros']
+    },
+    {
         filename: './html/pruebas.html',
         chunks: ['pruebas']
     },
@@ -64,10 +72,6 @@ const filesHTML = [
         chunks: ['editarPerfilDios']
     },
     {
-        filename: './html/editarAtributos.html',
-        chunks: ['editarPerfilAtributos']
-    },
-    {
         filename: './html/generarUsuarios.html',
         chunks: ['generarUsuarios']
     },
@@ -122,7 +126,9 @@ module.exports = {
     optimization: {},
     entry: {
         index: './src/index.js',
+        login: './src/index.js',
         pruebas: './src/js/elegirPrueba.js',
+        nosotros: './src/js/elegirPrueba.js',
         pruebasValoracion: './src/js/indexValidacion.js',
         pruebasEleccion: './src/js/indexValidacion.js',
         pruebasPuntual: './src/js/indexValidacion.js',
@@ -135,8 +141,7 @@ module.exports = {
         detallesDios: './src/js/detallesDios.js',
         detallesHumano: './src/js/detallesHumano.js',
         editarPerfilHumano: './src/js/editarPerfilHumano.js',
-        editarPerfilDios: './src/js/editarPerfilDios.js',
-        editarPerfilAtributos: './src/js/updateAttribute.js',
+        editarPerfilDios: './src/js/editarPerfilDios.js', 
         generarUsuarios: './src/js/generarUsuarios.js'
     },
     plugins: [

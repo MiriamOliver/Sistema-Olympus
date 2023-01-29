@@ -8,11 +8,15 @@
         <link rel="icon" type="image/x-icon" href="../assets/img/logo_olimpus.png">
     </head>
     <body>
-        <nav class="navbar cabecera">
-            <img src="../assets/img/logo_olimpus.png">
-            <h2 class="gelatine"><a class="nav-link" href="../index.html">Sistema Olympus</a></h2>
-            <div></div>
-          </nav>
+      <nav class="navbar">
+        <div class="col-10">
+          <img src="../assets/img/logo_olimpus.png">
+          <h2 class="gelatine"><a class="nav-link" href="../index.html">Sistema Olympus</a></h2>
+        </div>
+        <div class="col-1">
+          <a href="./login.html" title="Cerrar Sesion"><i title="Cerrar Sesion" class="fa fa-sign-out" aria-hidden="true"></i></a>
+        </div>
+      </nav>
           <div class="btn-volver">
             <a href="./editarPerfilDios.html"><button class="volver"><i class="fa fa-arrow-left" aria-hidden="true"></i> Volver</button></a>
           </div>
@@ -20,32 +24,29 @@
               <div class="col-md-4  shadow-sm border rounded-3">
                 <div class="p-5 border rounded-3 contenedorRegistro">
                   <h2 class="text-center mb-4">Cambiar Atributos</h2>
+                  <p class="text-center">Modificación de poder de habilidades</p>
                 </div>
                 <form class="p-5" id="registro">
                   <div class="mb-4">
-                    <label class="form-label">Sabiduria</label>
-                    <input type="range" value="3" class="form-range" min="1" max="5"" id="sabiduria" name="sabiduria" oninput="this.nextElementSibling.value = this.value">
-                    <output>3</output>
+                    <label class="form-label">Sabiduria&nbsp;&nbsp;-&nbsp;&nbsp;</label><output>3</output>
+                    <input type="range" value="3" class="form-range" min="1" max="5" id="sabiduria" name="sabiduria" oninput="this.previousElementSibling.value = this.value">
+                    
                   </div>
                   <div class="mb-4">
-                    <label class="form-label">Nobleza</label>
-                    <input type="range" value="3" class="form-range" min="1" max="5"" id="nobleza" name="nobleza" oninput="this.nextElementSibling.value = this.value">
-                    <output>3</output>
+                    <label class="form-label">Nobleza&nbsp;&nbsp;-&nbsp;&nbsp;</label><output>3</output>
+                    <input type="range" value="3" class="form-range" min="1" max="5" id="nobleza" name="nobleza" oninput="this.previousElementSibling.value = this.value">
                   </div>
                   <div class="mb-4">
-                    <label class="form-label">Virtud</label>
-                    <input type="range" value="3" class="form-range" min="1" max="5"" id="virtud" name="virtud" oninput="this.nextElementSibling.value = this.value">
-                    <output>3</output>
+                    <label class="form-label">Virtud&nbsp;&nbsp;-&nbsp;&nbsp;</label><output>3</output>
+                    <input type="range" value="3" class="form-range" min="1" max="5" id="virtud" name="virtud" oninput="this.previousElementSibling.value = this.value">
                   </div>
                   <div class="mb-4">
-                    <label class="form-label">Maldad</label>
-                    <input type="range" value="3" class="form-range" min="1" max="5"" id="maldad" name="maldad" oninput="this.nextElementSibling.value = this.value">
-                    <output>3</output>
+                    <label class="form-label">Maldad&nbsp;&nbsp;-&nbsp;&nbsp;</label><output>3</output>
+                    <input type="range" value="3" class="form-range" min="1" max="5" id="maldad" name="maldad" oninput="this.previousElementSibling.value = this.value">
                   </div>
                   <div class="mb-4">
-                    <label class="form-label">Audacia</label>
-                    <input type="range" value="3" class="form-range" min="1" max="5"" id="audacia" name="audacia" oninput="this.nextElementSibling.value = this.value">
-                    <output>3</output>
+                    <label class="form-label">Audacia&nbsp;&nbsp;-&nbsp;&nbsp;</label><output>3</output>
+                    <input type="range" value="3" class="form-range" min="1" max="5" id="audacia" name="audacia" oninput="this.previousElementSibling.value = this.value">
                   </div>
                   <div class="mb-4 d-grid gap-2 col-6 mx-auto boton">
                       <button class="btn btn-primary" type="submit" id="goAttributes">Cambiar atributos</button>

@@ -8,15 +8,21 @@
     <link rel="icon" type="image/x-icon" href="../assets/img/logo_olimpus.png">
   </head>
   <body>
-    <nav class="navbar cabecera">
-      <img src="../assets/img/logo_olimpus.png">
-      <h2 class="gelatine"><a class="nav-link" href="../index.html">Sistema Olympus</a></h2>
+    <nav class="navbar">
+      <div class="col-10">
+        <img src="../assets/img/logo_olimpus.png">
+        <h2 class="gelatine"><a class="nav-link" href="../index.html">Sistema Olympus</a></h2>
+      </div>
+      <div class="col-1">
+        <a href="./login.html" title="Cerrar Sesion"><i title="Cerrar Sesion" class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
     </nav>
     <div class="container text-center">
       <div class="row container-info">
         <a href="./perfilDios.html" class="col-6"><button class="volver"><i class="fa fa-arrow-left" aria-hidden="true"></i> Volver</button></a>
         <a href="pruebas.html" class="col-6"><button class="crear-prueba"><i class="fa fa-plus" aria-hidden="true"></i> Prueba</button></a>
       </div>
+      <p class="text-start">Pruebas creadas por los dioses</p>
         <div class="card text-center tabla">
           <div class="card-header p-3">
             <ul class="row nav nav-pills card-header-pills pe-4 ps-3 tabla-header">
@@ -51,7 +57,27 @@
         </div>
       </div>
     </div>
-    <footer class="fixed-bottom">
+    <footer>
+      <div class="row m-4 mb-5 d-flex justify-content-center contenedor-footer">
+        <div class="col-4 d-flex justify-content-center ">
+          <div class="text-start">
+            <h5>EXPLORE</h5>
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center ">
+          <div class="text-start">
+            <h5>CONTACTO</h5>
+            <ul>
+              <li>Telf. 123 968 741</li>
+              <li>c/ Monte Olimpo, I</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <span>© Copyright - 2022 | Khattari - Miriam</span>
     </footer>
   </body>

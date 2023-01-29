@@ -13,7 +13,11 @@
                 font-size: map.get($tema,"tamPasos"); 
                 width: 10vh; 
             }
+            .crear{
+                cursor: auto;
+            }
             .activa{
+                cursor: auto;
                 background: map.get($tema,"colorPrimario");
                 &:hover{
                     transition: all 0.5s;

@@ -8,16 +8,21 @@
     <link rel="icon" type="image/x-icon" href="../assets/img/logo_olimpus.png">
   </head>
   <body>
-    <nav class="navbar cabecera">
-      <img src="../assets/img/logo_olimpus.png">
-      <h2 class="gelatine"><a class="nav-link" href="../index.html">Sistema Olympus</a></h2>
+    <nav class="navbar">
+      <div class="col-10">
+        <img src="../assets/img/logo_olimpus.png">
+        <h2 class="gelatine"><a class="nav-link" href="../index.html">Sistema Olympus</a></h2>
+      </div>
+      <div class="col-1">
+        <a href="./login.html" title="Cerrar Sesion"><i title="Cerrar Sesion" class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
     </nav>
     <div class="btn-volver">
       <a href="./pruebas.html"><button class="volver"><i class="fa fa-arrow-left" aria-hidden="true"></i> Volver</button></a>
     </div>
     <div class="proceso">
       <div>
-        <a href="pruebas.html"><button type="button" class="btn btn-primary btn-lg mb-2 p-3 activa">1</button></a>
+        <button type="button" class="btn btn-primary btn-lg mb-2 p-3">1</button>
         <p>Selección</p>
       </div>
       <div>
@@ -80,8 +85,28 @@
         </div>
       </div>
     </div>
-    <footer class="bottom">
-      <span>© Copyright - 2022 | Khattari - Miriam</span>
-    </footer>
+    <footer>
+      <div class="row m-4 mb-5 d-flex justify-content-center contenedor-footer">
+          <div class="col-4 d-flex justify-content-center ">
+            <div class="text-start">
+              <h5>EXPLORE</h5>
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-center ">
+            <div class="text-start">
+              <h5>CONTACTO</h5>
+              <ul>
+                <li>Telf. 123 968 741</li>
+                <li>c/ Monte Olimpo, I</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span>© Copyright - 2022 | Khattari - Miriam</span>
+  </footer>
   </body>
 </html>

@@ -16,6 +16,7 @@ export const crearModalAsignar = (origen) => {
         <div class="modal-body">
             <div class="row">
                 <div class="col-6">
+                    <p><small>Humanos a cargo del dios</small></p>
                     <div class="card">
                         <div class="card-header">
                             <div class="row">
@@ -31,6 +32,7 @@ export const crearModalAsignar = (origen) => {
                     </div>
                 </div>
                 <div class="col-6">
+                <p><small>Información sobre la prueba</small></p>
                     <div class="card prueba mb-3" id="p${prueba.id}">
                         <div class="card-header">
                            <h6>Prueba : ${prueba.tipo}</h6>
@@ -42,6 +44,7 @@ export const crearModalAsignar = (origen) => {
                             </div>
                         </div>
                     </div>
+                    <p><small>Arrastra los humanos a la lista de candidatos para añadirlos a la prueba</small></p>
                     <div class="card">
                         <div class="card-header">
                             <h6>Candidatos a la prueba</h6>
@@ -61,7 +64,7 @@ export const crearModalAsignar = (origen) => {
 
     const divPadreModal = divModal.parentElement.style;
     divPadreModal.maxWidth ="90%";
-    divPadreModal.marginTop ="10vh";
+    divPadreModal.marginTop ="8vh";
     const div = document.createElement('div');
     let dios = nombreDios(prueba.iddios);
     div.innerHTML = modal(prueba, dios);

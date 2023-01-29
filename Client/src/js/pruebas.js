@@ -39,8 +39,8 @@ const crearFilaPrueba = ( prueba ) => {
                 <div class="col-3">${fecha.replace('T', ' | ')}</div>
                 <div class="col-1 acciones">
                     <div class="row">
-                        <div class="col-6"><i class="fa fa-pencil-square edit" aria-hidden="true"></i></div>
-                        <div class="col-6"><i class="fa fa-trash delete" aria-hidden="true"></i></div>
+                        <div class="col-6"><i title="Asignar prueba" class="fa fa-pencil-square edit" aria-hidden="true"></i></div>
+                        <div class="col-6"><i title="Borrar prueba" class="fa fa-trash delete" aria-hidden="true"></i></div>
                     </div>
                 </div>
             </div>

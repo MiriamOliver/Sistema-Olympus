@@ -1,0 +1,17 @@
+@mixin login($tema) {
+    .contenedor-login{
+        .formulario{
+            div{
+                background-color: white;
+            }
+            .enlace-login{
+                font-weight: map.get($tema,"pesoMedium");
+                a{
+                    color: #41acc4;
+                }
+            }
+        }
+
+    }
+ 
+}

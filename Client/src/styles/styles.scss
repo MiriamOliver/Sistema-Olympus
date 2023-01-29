@@ -1,22 +1,25 @@
 @use "sass:map";
 @import "~bootstrap/scss/bootstrap";
-@import "animation", 'tabla', 'pruebas', 'registro'; 
+@import "animation", 'tabla', 'pruebas', 'registro', 'inicio', 'login'; 
 @import 'modalRegistro', 'cabecera', "contenedor", "range";
 
 $tema:(
-    "colorPrimario": linear-gradient(to bottom right,  #ab5cf9, #baefe5),
+    "colorPrimario": linear-gradient(to bottom right,  #364649, #708F96),
     "colorSecundario": linear-gradient(to bottom right,  #cfd9df, #e2ebf0),
-    "colorBase" : #cfd9df,
-    "colorBaseHover" : #ab5cf9,
+    "colorBase" : #648890,
+    "colorBaseHover" : #708F96,
     "pesoBold":700,
     "pesoSemiBold":600,
     "pesoMedium":500,
     "pesoRegular":400,
     "pesoLight":300,
     "error" : 10pt,
+    "infoFooter" : 11pt,
     "texto" : 12pt,
     "categoria" : 14pt,
+    "destino" : 18pt,
     "tamPasos" : 20pt,
+    "tamTitulo" : 24pt,
     "iconos" : 16pt,
     "sombra":rgba(0, 0, 0, 0.6),
     "colorLetraBlanco": white,
@@ -29,6 +32,8 @@ $tema:(
 @include cabecera($tema);
 @include contenedor($tema);
 @include range($tema);
+@include inicio($tema);
+@include login($tema);
 
 .volver {
     width: 10%;

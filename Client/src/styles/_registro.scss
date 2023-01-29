@@ -1,11 +1,33 @@
 @mixin registro($tema) {
     body {   
         footer{
-            margin-top: 1vh;
-            padding: 1vh;
+            padding: 2vh;
             text-align: center;
             background: map.get($tema,"colorPrimario");
             color: map.get($tema,"colorLetraBlanco");
+            .contenedor-footer{
+                ul{
+                    padding: 0;
+                    list-style: none;
+                    li{
+                        font-size: map-get($tema, "infoFooter"); 
+                        font-weight: map.get($tema,"pesoLight");
+                        a{
+                            text-decoration: none;
+                            color: map.get($tema,"colorLetraBlanco");
+                            &:hover{
+                                font-weight: map.get($tema,"pesoMedium");
+                            }
+                        }
+                    }
+                }
+            }
+            span{
+                border-top: 1px solid white;
+                padding: 1rem;
+                font-size: map-get($tema, "texto"); 
+                font-weight: map.get($tema,"pesoMedium");
+            }
         }
         
         .contenedorRegistro{

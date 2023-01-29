@@ -19,20 +19,21 @@ export const initFate = () => {
 }
 
 const crearFilaAtributos = (attributes) => {
-    const html = `
-        <td scope="col"> ${attributes[0].value} </td>
-        <td scope="col"> ${attributes[1].value} </td>
-        <td scope="col"> ${attributes[2].value} </td>
-        <td scope="col"> ${attributes[3].value} </td>
-        <td scope="col"> ${attributes[4].value} </td>
-    `;
+    document.querySelector('.valor-sabiduria').value = `${[attributes[0].value]}`;
+    document.querySelector('.lvl-sabiduria').style.width = `${[attributes[0].value * 20]}%`;
+    document.querySelector('.valor-nobleza').value = `${[attributes[1].value]}`;
+    document.querySelector('.lvl-nobleza').style.width = `${[attributes[1].value * 20]}%`;
+    document.querySelector('.valor-virtud').value = `${[attributes[2].value]}`;
+    document.querySelector('.lvl-virtud').style.width = `${[attributes[2].value * 20]}%`;
+    document.querySelector('.valor-maldad').value = `${[attributes[3].value]}`;
+    document.querySelector('.lvl-maldad').style.width = `${[attributes[3].value * 20]}%`;
+    document.querySelector('.valor-audacia').value = `${[attributes[4].value]}`;
+    document.querySelector('.lvl-audacia').style.width = `${[attributes[4].value * 20]}%`;
 
-    const tr = document.createElement('tr');
-    tr.innerHTML = html;
 
-    tBody.appendChild(tr);
+
 }
 
 const agregarDestino = () => {
-    fateP.innerHTML = `Tu destino: ${fate}`;
+    fateP.innerHTML = `${fate}`;
 }

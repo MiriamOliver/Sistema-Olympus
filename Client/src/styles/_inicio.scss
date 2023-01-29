@@ -1,0 +1,39 @@
+@mixin inicio($tema) {
+    .contenedor-intro{
+        width: 100vw;
+        height: 82vh;
+        padding: 8%;
+        .texto{
+            background-color: #0000009a;
+            border-radius: 1rem;
+            padding: 2rem;
+            color: map.get($tema,"colorLetraBlanco");
+            h2{
+                font-size: map-get($tema, "tamTitulo"); 
+                font-weight: map.get($tema,"pesoMedium");
+            }
+            p{
+                font-size: map-get($tema, "texto"); 
+                font-weight: map.get($tema,"pesoLight");
+            }
+            a{
+                text-decoration: none;
+                button{
+                    background: map.get($tema,"colorSecundario");
+                    border-radius: 10vh;
+                    border: none;
+                    margin: 1rem auto 0;
+                    padding: 0.3rem 1rem;
+                    font-size: map-get($tema, "categoria");
+                    color:  #364649; 
+                    &:hover{
+                        background: map.get($tema,"colorPrimario");
+                        transition: all 0.5s;
+                        color: map.get($tema,"colorLetraBlanco");
+                        @include zoom();
+                    }
+                }
+            }
+        }
+    }
+}

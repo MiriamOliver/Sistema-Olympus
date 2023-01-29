@@ -43,7 +43,7 @@
             }
             .contenedor-tabla, .contenedor-tabla-usuarios{
                 overflow-y: scroll;
-                height: 58vh;
+                height: 52vh;
                 font-size: map-get($tema, "texto");
                 .card-body{
                     div{
@@ -117,7 +117,7 @@
                             }
                         }
                         .lista-candidatos{
-                            height: 37vh;
+                            height: 33vh;
                             overflow-y: scroll;
                             .card{
                                 .card-body{

@@ -17,4 +17,20 @@
     input[type="range"]::-ms-track {
         background: map.get($tema,"colorSecundario");
     }
+
+    .progress-bar{
+        background: map.get($tema,"colorPrimario");
+    }
+
+    .fate{
+        margin: auto;
+        padding: 2rem;
+        background: map.get($tema,"colorPrimario");
+        color: map.get($tema,"colorLetraBlanco");
+        border-radius: 4rem;
+        width: 6.2rem;
+        height: 6.2rem;
+        font-size: map.get($tema,"destino");
+        font-weight: map.get($tema,"pesoMedium");
+    }
 }
